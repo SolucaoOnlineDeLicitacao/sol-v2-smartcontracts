@@ -1,0 +1,25 @@
+{
+  "name": "sol-my-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy:local": "env-cmd -f environments/local.env node scripts/lacchain/deployContract.js",
+    "deploy:prod": "env-cmd -f environments/prod.env node scripts/lacchain/deployContract.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@lacchain/gas-model-provider": "^1.1.0",
+    "dotenv": "^16.3.1",
+    "env-cmd": "^10.1.0",
+    "ethers": "^5.7.2"
+  }
+}
